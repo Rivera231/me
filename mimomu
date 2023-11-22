@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hakdog;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Rivera_CPE
+ */
+public class Hakdog {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("kalcutelator");
+        System.out.println("  ");
+        Scanner huh = new Scanner(System.in);
+
+        int q = (100);
+        int w = (300);
+        System.out.println("Let a=100 and b=300");
+        System.out.println("  ");
+
+        System.out.println("Please Select an operation");
+        System.out.println("1. Addition (+)");
+        System.out.println("2. Subtraction (-)");
+        System.out.println("3. Multiplication (*)");
+        System.out.println("4. Division (/)");
+        int wow = huh.nextInt();
+
+        switch (wow) {
+            case 1:
+                double add = (q + w);
+                System.out.println("The Answer is: " + add);
+                break;
+            case 2:
+                double sub = (q - w);
+                System.out.println("The Answer is: " + sub);
+                break;
+            case 3:
+                double mult = (q * w);
+                System.out.println("The Answer is: " + mult);
+                break;
+            case 4:
+                double div = (q / w);
+                System.out.println("The Answer is: " + div);
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+        
